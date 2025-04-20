@@ -88,6 +88,9 @@ if __name__ == "__main__":
             phi[i], D, N, beta_deg, fz, a_p, a_r, Kt, Kr, Ka
         )
 
+    plt.rcParams["font.sans-serif"] = ["SimHei"]  # 设置中文字体
+    plt.rcParams["axes.unicode_minus"] = False  # 显示负号
+
     plt.figure(figsize=(10, 6))
     plt.plot(t, Fx, label="Fx (切向力)", color="blue")
     plt.plot(t, Fy, label="Fy (径向力)", color="orange")
